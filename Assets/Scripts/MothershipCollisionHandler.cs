@@ -3,6 +3,7 @@ using UnityEngine;
 public class MothershipCollisionHandler : MonoBehaviour
 {
     // This function is called when a particle system collides with the mothership
+    public float forceMagnitude = 2f;
     private void OnParticleCollision(GameObject other)
     {
         print("Particle");
@@ -13,17 +14,24 @@ public class MothershipCollisionHandler : MonoBehaviour
             Destroy(other);
         }
     }
-
-    public void OnCollisionEnter(Collision collision)
-
+    private void OnCollisionEnter(Collision collision)
     {
         print("Collision");
         if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Pimbie"))
         {
-            // Destroy the particle system
-            Destroy(collision.gameObject);
+            print("hii");
+            // Get the Rigidbody component from the collided object
+            Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                Vector3 collisionNormal = collision.contacts[0].normal;
+                Vector3 bounceDirection = collisionNormal; // The normal already points away from the collision
+
+                rb.AddForce(bounceDirection * forceMagnitude);
+            }
         }
     }
+
     void OnTriggerEnter(UnityEngine.Collider other)
     {
         print("Trigger");

@@ -384,11 +384,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1972534431178057005, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.554835
+      value: 16.41
       objectReference: {fileID: 0}
     - target: {fileID: 1972534431178057005, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8101.384
+      value: 8166.7
       objectReference: {fileID: 0}
     - target: {fileID: 1972534431178057005, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
       propertyPath: m_LocalRotation.w
@@ -418,6 +418,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7240013340727110362, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7302567084530609033, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
       propertyPath: enginePower
       value: 60
@@ -428,7 +432,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7967725284389713599, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
       propertyPath: m_IsKinematic
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967725284389713599, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7587569381338428637, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
@@ -440,7 +448,7 @@ PrefabInstance:
       addedObject: {fileID: 1151284025}
     - targetCorrespondingSourceObject: {fileID: 1158561113003540375, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1151284034}
+      addedObject: {fileID: 1151284035}
   m_SourcePrefab: {fileID: 100100000, guid: 70bc6b6358059e04bbf40b0ecb70b375, type: 3}
 --- !u!1001 &361722157
 PrefabInstance:
@@ -1266,7 +1274,7 @@ MonoBehaviour:
   startingHealth: 100
   healthSlider: {fileID: 1000640724}
   scoreText: {fileID: 779705961}
---- !u!64 &1151284034
+--- !u!64 &1151284035
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1276,7 +1284,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1287,7 +1295,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: -4664793100313654021, guid: c5ec2d9df8a2468478fd408cef27f3ff, type: 3}
+  m_Mesh: {fileID: 1269116562925425082, guid: f075e254465ab4f4ca310cbec3ed905b, type: 3}
 --- !u!1001 &1180216994
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1912,7 +1920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6615124798682305726, guid: d0ee9ecd775e34846983a62b384b28da, type: 3}
       propertyPath: m_IsKinematic
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6615124798682305726, guid: d0ee9ecd775e34846983a62b384b28da, type: 3}
       propertyPath: m_CollisionDetection
@@ -1930,9 +1938,17 @@ PrefabInstance:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7399124003873706482, guid: d0ee9ecd775e34846983a62b384b28da, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7399124003873706482, guid: d0ee9ecd775e34846983a62b384b28da, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8167784190006973660, guid: d0ee9ecd775e34846983a62b384b28da, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8167784190006973660, guid: d0ee9ecd775e34846983a62b384b28da, type: 3}
       propertyPath: enemyPrefab
@@ -1982,8 +1998,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyMothership
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 637368807906774014, guid: d0ee9ecd775e34846983a62b384b28da, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -2008,6 +2023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf529a79594754b6abba4829c6adcc9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  forceMagnitude: 2
 --- !u!1 &2057152909
 GameObject:
   m_ObjectHideFlags: 0
