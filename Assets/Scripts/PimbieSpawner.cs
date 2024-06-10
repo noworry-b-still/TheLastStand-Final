@@ -31,7 +31,7 @@ public class PimbieSpawner : MonoBehaviour
         switch (currentLevel)
         {
             case Level.Level1:
-                maxEnemies = 3;
+                maxEnemies = 2;
                 break;
             case Level.Level2:
                 maxEnemies = 5;

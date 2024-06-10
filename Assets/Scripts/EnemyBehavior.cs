@@ -24,10 +24,8 @@ public class EnemyBehavior : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Check if the player's transform is assigned
         if (player != null)
         {
-            // Calculate the direction towards the player
             Vector3 directionToPlayer = (player.position - transform.position).normalized;
 
             // Calculate the distance to the player
@@ -37,8 +35,8 @@ public class EnemyBehavior : MonoBehaviour
             if (distanceToPlayer < minDistance)
             {
                 directionToPlayer *= -1; // Move away from the player
-                movementSpeed = initialMoveSpeed * 150;
-                minDistance = initialMinDistance * 8;
+                movementSpeed = initialMoveSpeed * 100;
+                minDistance = initialMinDistance * 2;
                 foreach (Transform child in gameObject.transform)
                 {
                     if (child.name == "MachineGunHolder")
@@ -89,7 +87,6 @@ public class EnemyBehavior : MonoBehaviour
     //     // NEED TO DETECT IF HIT BY PLAYER SO THEY ARE NOT IMMEDIATELY DESTROYED
     //     if (other.CompareTag("Player"))
     //     {
-    //         // Reduce players HP by large margin to punish for collision
     //         Destroy(gameObject);
     //     }
     //     else

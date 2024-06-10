@@ -49,6 +49,7 @@ public class PlayerHealth : MonoBehaviour
         if (other.CompareTag("EnemyBullets"))
         {
             TakeDamage(5);
+            // Destroy(other);
         }
     }
 
