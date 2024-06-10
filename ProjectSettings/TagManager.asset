@@ -11,6 +11,7 @@ TagManager:
   - PlayerBullet
   - PlayerHealth
   - EnemyBullets
+  - WanderPoint
   layers:
   - Default
   - TransparentFX

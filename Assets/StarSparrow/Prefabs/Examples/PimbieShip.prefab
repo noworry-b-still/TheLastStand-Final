@@ -1972,8 +1972,8 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 549564416007939884}
   - {fileID: 1680121199565101999}
-  - {fileID: 2278267283707869606}
   - {fileID: 1939857514700898369}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2281,7 +2281,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1001 &4929296608889625428
+--- !u!1001 &6653532766437852638
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2294,55 +2294,39 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 248199223843360039, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: InitialModule.startSize.scalar
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 248199223843360039, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 248199223843360039, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: TrailModule.widthOverTrail.scalar
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 248199223843360039, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: CollisionModule.maxCollisionShapes
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 248199223843360039, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 276584688476250837, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: m_Volume
-      value: 0.117
-      objectReference: {fileID: 0}
-    - target: {fileID: 276584688476250837, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: MaxDistance
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 276584688476250837, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: MinDistance
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 958186167206719279, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
       propertyPath: m_Name
       value: MachineGunHolder
       objectReference: {fileID: 0}
-    - target: {fileID: 3220829844296602915, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: m_TagString
-      value: EnemyBullets
-      objectReference: {fileID: 0}
     - target: {fileID: 3465595658837586905, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
       propertyPath: playOnAwake
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3465595658837586905, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: InitialModule.maxNumParticles
-      value: 1000
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465595658837586905, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3465604559934862241, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
       propertyPath: playOnAwake
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3465604559934862241, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465604559934862241, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3465756716827453517, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
@@ -2350,7 +2334,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3465756716827453517, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3465756716827453517, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3487584062346989777, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
@@ -2358,31 +2346,27 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3487584062346989777, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3487584062346989777, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3664348370840854895, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: m_TagString
-      value: EnemyBullets
-      objectReference: {fileID: 0}
-    - target: {fileID: 3665189924375602379, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: m_TagString
-      value: EnemyBullets
-      objectReference: {fileID: 0}
-    - target: {fileID: 3665650230651640987, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: m_TagString
-      value: EnemyBullets
-      objectReference: {fileID: 0}
-    - target: {fileID: 3665875774709965105, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: m_TagString
-      value: EnemyBullets
+    - target: {fileID: 3659579553078339999, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4406017697428972450, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
       propertyPath: playOnAwake
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4406017697428972450, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406017697428972450, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4406026628045792218, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
@@ -2390,15 +2374,23 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4406026628045792218, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: InitialModule.maxNumParticles
-      value: 1000
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406026628045792218, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4406150337134475342, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
       propertyPath: playOnAwake
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4406150337134475342, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406150337134475342, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4421266024221049042, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
@@ -2406,52 +2398,44 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4421266024221049042, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421266024221049042, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4602753504678589640, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: m_TagString
-      value: EnemyBullets
-      objectReference: {fileID: 0}
-    - target: {fileID: 4603272876423072920, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: m_TagString
-      value: EnemyBullets
-      objectReference: {fileID: 0}
-    - target: {fileID: 4603474470621851954, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: m_TagString
-      value: EnemyBullets
-      objectReference: {fileID: 0}
-    - target: {fileID: 4604785835218481516, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: m_TagString
-      value: EnemyBullets
+    - target: {fileID: 4608428212705753500, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 6379022571473063581, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
       propertyPath: playOnAwake
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6379022571473063581, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: InitialModule.startSize.scalar
+      propertyPath: CollisionModule.m_Bounce.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379022571473063581, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
+      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6379022571473063581, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: TrailModule.widthOverTrail.scalar
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6379022571473063581, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: CollisionModule.maxCollisionShapes
-      value: 512
+    - target: {fileID: 6626599488446948082, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.10000001
       objectReference: {fileID: 0}
     - target: {fileID: 6626599488446948082, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6626599488446948082, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.926
+      value: -0.19
       objectReference: {fileID: 0}
     - target: {fileID: 6626599488446948082, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.674
+      value: 6.68
       objectReference: {fileID: 0}
     - target: {fileID: 6626599488446948082, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2459,15 +2443,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6626599488446948082, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.000000021855694
       objectReference: {fileID: 0}
     - target: {fileID: 6626599488446948082, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6626599488446948082, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6626599488446948082, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2481,17 +2465,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8613903792659779214, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-      propertyPath: m_TagString
-      value: EnemyBullets
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
---- !u!4 &2278267283707869606 stripped
+--- !u!4 &549564416007939884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6626599488446948082, guid: 4ebe20c68f6704c4e836135cc7179414, type: 3}
-  m_PrefabInstance: {fileID: 4929296608889625428}
+  m_PrefabInstance: {fileID: 6653532766437852638}
   m_PrefabAsset: {fileID: 0}
